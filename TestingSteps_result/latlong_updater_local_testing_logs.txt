@@ -1,0 +1,318 @@
+C:\Users\smita\AppData\Local\Programs\Python\Python39\python.exe C:/Users/smita/IIT_MADRAS_COURSE/Assignment_CapstoneProject/cloud-capstone/src/main2.py
+Min Lat :  12.786924216944433
+Min Lon : 77.47419796514791
+Max Lat : 13.07638778305557
+Max Lon : 77.7711940348521
+Simulating per minute latlong update
+
+Connecting to API Gateway for updating lat long for following taxis
+{'taxiList': [{'_id': {'$oid': '6294b1b4cbf7904107b09a8f'}, 'name': 'Toofan', 'type': 'Luxury', 'location': {'type': 'Point', 'coordinates': [12.9262, 77.52]}, 'hired': 'Y', 'timestamp': '2022-05-30T17:29:46.386517'}, {'_id': {'$oid': '6294b1b4cbf7904107b09a90'}, 'name': 'Vimaan', 'type': 'Basic', 'location': {'type': 'Point', 'coordinates': [13.0564, 77.768]}, 'hired': 'N', 'timestamp': '2022-05-30T17:29:46.386517'}, {'_id': {'$oid': '6294b1b4cbf7904107b09a91'}, 'name': 'Pavan', 'type': 'Deluxe', 'location': {'type': 'Point', 'coordinates': [12.9312, 77.7604]}, 'hired': 'N', 'timestamp': '2022-05-30T17:29:46.386517'}, {'_id': {'$oid': '6294b1b4cbf7904107b09a92'}, 'name': 'Jeevan', 'type': 'Deluxe', 'location': {'type': 'Point', 'coordinates': [12.8545, 77.5951]}, 'hired': 'Y', 'timestamp': '2022-05-30T17:29:46.386517'}, {'_id': {'$oid': '6294b1b4cbf7904107b09a93'}, 'name': 'Uber', 'type': 'Deluxe', 'location': {'type': 'Point', 'coordinates': [12.8479, 77.6094]}, 'hired': 'N', 'timestamp': '2022-05-30T17:29:46.386517'}, {'_id': {'$oid': '6294b1b4cbf7904107b09a94'}, 'name': 'Ola', 'type': 'Deluxe', 'location': {'type': 'Point', 'coordinates': [12.9747, 77.6446]}, 'hired': 'N', 'timestamp': '2022-05-30T17:29:46.386517'}, {'_id': {'$oid': '6294b1b4cbf7904107b09a95'}, 'name': 'MeruCab', 'type': 'Deluxe', 'location': {'type': 'Point', 'coordinates': [13.0238, 77.5091]}, 'hired': 'N', 'timestamp': '2022-05-30T17:29:46.386517'}, {'_id': {'$oid': '6294b1b4cbf7904107b09a96'}, 'name': 'Pavan', 'type': 'Deluxe', 'location': {'type': 'Point', 'coordinates': [12.9115, 77.7686]}, 'hired': 'Y', 'timestamp': '2022-05-30T17:29:46.386517'}, {'_id': {'$oid': '6294b1b4cbf7904107b09a97'}, 'name': 'Toofan', 'type': 'Deluxe', 'location': {'type': 'Point', 'coordinates': [12.8373, 77.6797]}, 'hired': 'N', 'timestamp': '2022-05-30T17:29:46.386517'}, {'_id': {'$oid': '6294b1b4cbf7904107b09a98'}, 'name': 'Vimaan', 'type': 'Deluxe', 'location': {'type': 'Point', 'coordinates': [12.9556, 77.4926]}, 'hired': 'N', 'timestamp': '2022-05-30T17:29:46.386517'}, {'_id': {'$oid': '6294b1b4cbf7904107b09a99'}, 'name': 'Pavan', 'type': 'Deluxe', 'location': {'type': 'Point', 'coordinates': [12.9171, 77.5427]}, 'hired': 'Y', 'timestamp': '2022-05-30T17:29:46.386517'}, {'_id': {'$oid': '6294b1b4cbf7904107b09a9a'}, 'name': 'Toofan', 'type': 'Deluxe', 'location': {'type': 'Point', 'coordinates': [12.8963, 77.7326]}, 'hired': 'N', 'timestamp': '2022-05-30T17:29:46.386517'}, {'_id': {'$oid': '6294b1b4cbf7904107b09a9b'}, 'name': 'Vimaan', 'type': 'Deluxe', 'location': {'type': 'Point', 'coordinates': [12.9305, 77.6556]}, 'hired': 'N', 'timestamp': '2022-05-30T17:29:46.386517'}, {'_id': {'$oid': '6294b1b4cbf7904107b09a9c'}, 'name': 'Pavan', 'type': 'Luxury', 'location': {'type': 'Point', 'coordinates': [12.92535, 77.70559]}, 'hired': 'Y', 'timestamp': '2022-05-30T17:29:46.386517'}, {'_id': {'$oid': '6294b1b4cbf7904107b09a9d'}, 'name': 'Chirag', 'type': 'Basic', 'location': {'type': 'Point', 'coordinates': [12.87743, 77.59633]}, 'hired': 'Y', 'timestamp': '2022-05-30T17:29:46.386517'}, {'_id': {'$oid': '6294b1b4cbf7904107b09a9e'}, 'name': 'Kiran', 'type': 'Deluxe', 'location': {'type': 'Point', 'coordinates': [12.89542, 77.73154]}, 'hired': 'N', 'timestamp': '2022-05-30T17:29:46.386517'}, {'_id': {'$oid': '6294b1b4cbf7904107b09a9f'}, 'name': 'Suman', 'type': 'Utility', 'location': {'type': 'Point', 'coordinates': [12.85392, 77.71584]}, 'hired': 'N', 'timestamp': '2022-05-30T17:29:46.386517'}, {'_id': {'$oid': '6294b1b4cbf7904107b09aa0'}, 'name': 'Aahan', 'type': 'Basic', 'location': {'type': 'Point', 'coordinates': [12.78772, 77.58764]}, 'hired': 'N', 'timestamp': '2022-05-30T17:29:46.386517'}, {'_id': {'$oid': '6294b1b4cbf7904107b09aa1'}, 'name': 'Dan', 'type': 'Deluxe', 'location': {'type': 'Point', 'coordinates': [12.87352, 77.62124]}, 'hired': 'N', 'timestamp': '2022-05-30T17:29:46.386517'}, {'_id': {'$oid': '6294b1b4cbf7904107b09aa2'}, 'name': 'Tran', 'type': 'Luxury', 'location': {'type': 'Point', 'coordinates': [13.03512, 77.68794]}, 'hired': 'N', 'timestamp': '2022-05-30T17:29:46.386517'}, {'_id': {'$oid': '6294b1b4cbf7904107b09aa3'}, 'name': 'Sean', 'type': 'Utility', 'location': {'type': 'Point', 'coordinates': [12.82212, 77.49974]}, 'hired': 'N', 'timestamp': '2022-05-30T17:29:46.386517'}, {'_id': {'$oid': '6294b1b4cbf7904107b09aa4'}, 'name': 'Dean', 'type': 'Deluxe', 'location': {'type': 'Point', 'coordinates': [13.01542, 77.73374]}, 'hired': 'N', 'timestamp': '2022-05-30T17:29:46.386517'}, {'_id': {'$oid': '6294b1b4cbf7904107b09aa5'}, 'name': 'Tapan', 'type': 'Luxury', 'location': {'type': 'Point', 'coordinates': [13.06652, 77.56394]}, 'hired': 'N', 'timestamp': '2022-05-30T17:29:46.386517'}, {'_id': {'$oid': '6294b1b4cbf7904107b09aa6'}, 'name': 'Leapun', 'type': 'Utility', 'location': {'type': 'Point', 'coordinates': [12.98272, 77.62924]}, 'hired': 'N', 'timestamp': '2022-05-30T17:29:46.386517'}, {'_id': {'$oid': '6294b1b4cbf7904107b09aa7'}, 'name': 'Turan', 'type': 'Basic', 'location': {'type': 'Point', 'coordinates': [13.02962, 77.54824]}, 'hired': 'N', 'timestamp': '2022-05-30T17:29:46.387515'}, {'_id': {'$oid': '6294b1b4cbf7904107b09aa8'}, 'name': 'Riyan', 'type': 'Luxury', 'location': {'type': 'Point', 'coordinates': [12.807, 77.617]}, 'hired': 'N', 'timestamp': '2022-05-30T17:29:46.387515'}, {'_id': {'$oid': '6294b1b4cbf7904107b09aa9'}, 'name': 'MeruLight', 'type': 'Basic', 'location': {'type': 'Point', 'coordinates': [13.0497, 77.7]}, 'hired': 'N', 'timestamp': '2022-05-30T17:29:46.387515'}, {'_id': {'$oid': '6294b1b4cbf7904107b09aaa'}, 'name': 'Bright', 'type': 'Deluxe', 'location': {'type': 'Point', 'coordinates': [12.9641, 77.6976]}, 'hired': 'N', 'timestamp': '2022-05-30T17:29:46.387515'}, {'_id': {'$oid': '6294b1b4cbf7904107b09aab'}, 'name': 'John', 'type': 'Deluxe', 'location': {'type': 'Point', 'coordinates': [12.9182, 77.5102]}, 'hired': 'Y', 'timestamp': '2022-05-30T17:29:46.387515'}, {'_id': {'$oid': '6294b1b4cbf7904107b09aac'}, 'name': 'Sean', 'type': 'Deluxe', 'location': {'type': 'Point', 'coordinates': [12.9332, 77.4786]}, 'hired': 'N', 'timestamp': '2022-05-30T17:29:46.387515'}, {'_id': {'$oid': '6294b1b4cbf7904107b09aad'}, 'name': 'Ola', 'type': 'Deluxe', 'location': {'type': 'Point', 'coordinates': [12.953, 77.5445]}, 'hired': 'N', 'timestamp': '2022-05-30T17:29:46.387515'}, {'_id': {'$oid': '6294b1b4cbf7904107b09aae'}, 'name': 'Blue', 'type': 'Deluxe', 'location': {'type': 'Point', 'coordinates': [12.9341, 77.6455]}, 'hired': 'N', 'timestamp': '2022-05-30T17:29:46.387515'}, {'_id': {'$oid': '6294b1b4cbf7904107b09aaf'}, 'name': 'Vivan', 'type': 'Deluxe', 'location': {'type': 'Point', 'coordinates': [13.0148, 77.4875]}, 'hired': 'Y', 'timestamp': '2022-05-30T17:29:46.387515'}, {'_id': {'$oid': '6294b1b4cbf7904107b09ab0'}, 'name': 'Nayan', 'type': 'Deluxe', 'location': {'type': 'Point', 'coordinates': [13.0485, 77.4885]}, 'hired': 'N', 'timestamp': '2022-05-30T17:29:46.387515'}, {'_id': {'$oid': '6294b1b4cbf7904107b09ab1'}, 'name': 'Shivam', 'type': 'Deluxe', 'location': {'type': 'Point', 'coordinates': [12.8361, 77.6399]}, 'hired': 'N', 'timestamp': '2022-05-30T17:29:46.387515'}, {'_id': {'$oid': '6294b1b4cbf7904107b09ab2'}, 'name': 'Bill', 'type': 'Deluxe', 'location': {'type': 'Point', 'coordinates': [12.9075, 77.6446]}, 'hired': 'Y', 'timestamp': '2022-05-30T17:29:46.387515'}, {'_id': {'$oid': '6294b1b4cbf7904107b09ab3'}, 'name': 'Simone', 'type': 'Deluxe', 'location': {'type': 'Point', 'coordinates': [13.0383, 77.6428]}, 'hired': 'N', 'timestamp': '2022-05-30T17:29:46.387515'}, {'_id': {'$oid': '6294b1b4cbf7904107b09ab4'}, 'name': 'Chinna', 'type': 'Deluxe', 'location': {'type': 'Point', 'coordinates': [12.82785, 77.62155]}, 'hired': 'Y', 'timestamp': '2022-05-30T17:29:46.387515'}, {'_id': {'$oid': '6294b1b4cbf7904107b09ab5'}, 'name': 'Vinay', 'type': 'Basic', 'location': {'type': 'Point', 'coordinates': [12.79185, 77.56855]}, 'hired': 'Y', 'timestamp': '2022-05-30T17:29:46.387515'}, {'_id': {'$oid': '6294b1b4cbf7904107b09ab6'}, 'name': 'Santa', 'type': 'Luxury', 'location': {'type': 'Point', 'coordinates': [13.01545, 77.69995]}, 'hired': 'Y', 'timestamp': '2022-05-30T17:29:46.387515'}, {'_id': {'$oid': '6294b1b4cbf7904107b09ab7'}, 'name': 'Dey', 'type': 'Basic', 'location': {'type': 'Point', 'coordinates': [13.04025, 77.73075]}, 'hired': 'Y', 'timestamp': '2022-05-30T17:29:46.387515'}, {'_id': {'$oid': '6294b1b4cbf7904107b09ab8'}, 'name': 'Vijay', 'type': 'Deluxe', 'location': {'type': 'Point', 'coordinates': [12.87075, 77.76385]}, 'hired': 'Y', 'timestamp': '2022-05-30T17:29:46.387515'}, {'_id': {'$oid': '6294b1b4cbf7904107b09ab9'}, 'name': 'Walt', 'type': 'Luxury', 'location': {'type': 'Point', 'coordinates': [12.79335, 77.50525]}, 'hired': 'Y', 'timestamp': '2022-05-30T17:29:46.387515'}, {'_id': {'$oid': '6294b1b4cbf7904107b09aba'}, 'name': 'Simran', 'type': 'Basic', 'location': {'type': 'Point', 'coordinates': [12.84985, 77.59325]}, 'hired': 'N', 'timestamp': '2022-05-30T17:29:46.387515'}, {'_id': {'$oid': '6294b1b4cbf7904107b09abb'}, 'name': 'Sai', 'type': 'Luxury', 'location': {'type': 'Point', 'coordinates': [13.02074, 77.47775]}, 'hired': 'Y', 'timestamp': '2022-05-30T17:29:46.387515'}, {'_id': {'$oid': '6294b1b4cbf7904107b09abc'}, 'name': 'Suman', 'type': 'Deluxe', 'location': {'type': 'Point', 'coordinates': [12.94754, 77.63575]}, 'hired': 'N', 'timestamp': '2022-05-30T17:29:46.387515'}, {'_id': {'$oid': '6294b1b4cbf7904107b09abd'}, 'name': 'Vimal', 'type': 'Basic', 'location': {'type': 'Point', 'coordinates': [12.89694, 77.75915]}, 'hired': 'Y', 'timestamp': '2022-05-30T17:29:46.387515'}, {'_id': {'$oid': '6294b1b4cbf7904107b09abe'}, 'name': 'Hash', 'type': 'Deluxe', 'location': {'type': 'Point', 'coordinates': [13.00834, 77.67515]}, 'hired': 'N', 'timestamp': '2022-05-30T17:29:46.387515'}, {'_id': {'$oid': '6294b1b4cbf7904107b09abf'}, 'name': 'Bash', 'type': 'Luxury', 'location': {'type': 'Point', 'coordinates': [12.80444, 77.69115]}, 'hired': 'N', 'timestamp': '2022-05-30T17:29:46.387515'}, {'_id': {'$oid': '6294b1b4cbf7904107b09ac0'}, 'name': 'Biyan', 'type': 'Luxury', 'location': {'type': 'Point', 'coordinates': [12.80441, 77.69115]}, 'hired': 'N', 'timestamp': '2022-05-30T17:29:46.387515'}]}
+
+Connecting to api gateway to update latlong for taxi  Toofan  with id  6294b1b4cbf7904107b09a8f
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Vimaan  with id  6294b1b4cbf7904107b09a90
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Pavan  with id  6294b1b4cbf7904107b09a91
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Jeevan  with id  6294b1b4cbf7904107b09a92
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Uber  with id  6294b1b4cbf7904107b09a93
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Ola  with id  6294b1b4cbf7904107b09a94
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  MeruCab  with id  6294b1b4cbf7904107b09a95
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Pavan  with id  6294b1b4cbf7904107b09a96
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Toofan  with id  6294b1b4cbf7904107b09a97
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Vimaan  with id  6294b1b4cbf7904107b09a98
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Pavan  with id  6294b1b4cbf7904107b09a99
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Toofan  with id  6294b1b4cbf7904107b09a9a
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Vimaan  with id  6294b1b4cbf7904107b09a9b
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Pavan  with id  6294b1b4cbf7904107b09a9c
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Chirag  with id  6294b1b4cbf7904107b09a9d
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Kiran  with id  6294b1b4cbf7904107b09a9e
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Suman  with id  6294b1b4cbf7904107b09a9f
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Aahan  with id  6294b1b4cbf7904107b09aa0
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Dan  with id  6294b1b4cbf7904107b09aa1
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Tran  with id  6294b1b4cbf7904107b09aa2
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Sean  with id  6294b1b4cbf7904107b09aa3
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Dean  with id  6294b1b4cbf7904107b09aa4
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Tapan  with id  6294b1b4cbf7904107b09aa5
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Leapun  with id  6294b1b4cbf7904107b09aa6
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Turan  with id  6294b1b4cbf7904107b09aa7
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Riyan  with id  6294b1b4cbf7904107b09aa8
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  MeruLight  with id  6294b1b4cbf7904107b09aa9
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Bright  with id  6294b1b4cbf7904107b09aaa
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  John  with id  6294b1b4cbf7904107b09aab
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Sean  with id  6294b1b4cbf7904107b09aac
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Ola  with id  6294b1b4cbf7904107b09aad
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Blue  with id  6294b1b4cbf7904107b09aae
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Vivan  with id  6294b1b4cbf7904107b09aaf
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Nayan  with id  6294b1b4cbf7904107b09ab0
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Shivam  with id  6294b1b4cbf7904107b09ab1
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Bill  with id  6294b1b4cbf7904107b09ab2
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Simone  with id  6294b1b4cbf7904107b09ab3
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Chinna  with id  6294b1b4cbf7904107b09ab4
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Vinay  with id  6294b1b4cbf7904107b09ab5
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Santa  with id  6294b1b4cbf7904107b09ab6
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Dey  with id  6294b1b4cbf7904107b09ab7
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Vijay  with id  6294b1b4cbf7904107b09ab8
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Walt  with id  6294b1b4cbf7904107b09ab9
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Simran  with id  6294b1b4cbf7904107b09aba
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Sai  with id  6294b1b4cbf7904107b09abb
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Suman  with id  6294b1b4cbf7904107b09abc
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Vimal  with id  6294b1b4cbf7904107b09abd
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Hash  with id  6294b1b4cbf7904107b09abe
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Bash  with id  6294b1b4cbf7904107b09abf
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Biyan  with id  6294b1b4cbf7904107b09ac0
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Sleeping for 60 secs
+
+
+
+
+Connecting to api gateway to update latlong for taxi  Toofan  with id  6294b1b4cbf7904107b09a8f
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Vimaan  with id  6294b1b4cbf7904107b09a90
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Pavan  with id  6294b1b4cbf7904107b09a91
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Jeevan  with id  6294b1b4cbf7904107b09a92
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Uber  with id  6294b1b4cbf7904107b09a93
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Ola  with id  6294b1b4cbf7904107b09a94
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  MeruCab  with id  6294b1b4cbf7904107b09a95
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Pavan  with id  6294b1b4cbf7904107b09a96
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Toofan  with id  6294b1b4cbf7904107b09a97
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Vimaan  with id  6294b1b4cbf7904107b09a98
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Pavan  with id  6294b1b4cbf7904107b09a99
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Toofan  with id  6294b1b4cbf7904107b09a9a
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Vimaan  with id  6294b1b4cbf7904107b09a9b
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Pavan  with id  6294b1b4cbf7904107b09a9c
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Chirag  with id  6294b1b4cbf7904107b09a9d
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Kiran  with id  6294b1b4cbf7904107b09a9e
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Suman  with id  6294b1b4cbf7904107b09a9f
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Aahan  with id  6294b1b4cbf7904107b09aa0
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Dan  with id  6294b1b4cbf7904107b09aa1
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Tran  with id  6294b1b4cbf7904107b09aa2
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Sean  with id  6294b1b4cbf7904107b09aa3
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Dean  with id  6294b1b4cbf7904107b09aa4
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Tapan  with id  6294b1b4cbf7904107b09aa5
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Leapun  with id  6294b1b4cbf7904107b09aa6
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Turan  with id  6294b1b4cbf7904107b09aa7
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Riyan  with id  6294b1b4cbf7904107b09aa8
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  MeruLight  with id  6294b1b4cbf7904107b09aa9
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Bright  with id  6294b1b4cbf7904107b09aaa
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  John  with id  6294b1b4cbf7904107b09aab
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Sean  with id  6294b1b4cbf7904107b09aac
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Ola  with id  6294b1b4cbf7904107b09aad
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Blue  with id  6294b1b4cbf7904107b09aae
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Vivan  with id  6294b1b4cbf7904107b09aaf
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Nayan  with id  6294b1b4cbf7904107b09ab0
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Shivam  with id  6294b1b4cbf7904107b09ab1
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Bill  with id  6294b1b4cbf7904107b09ab2
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Simone  with id  6294b1b4cbf7904107b09ab3
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Chinna  with id  6294b1b4cbf7904107b09ab4
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Vinay  with id  6294b1b4cbf7904107b09ab5
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Santa  with id  6294b1b4cbf7904107b09ab6
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Dey  with id  6294b1b4cbf7904107b09ab7
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Vijay  with id  6294b1b4cbf7904107b09ab8
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Walt  with id  6294b1b4cbf7904107b09ab9
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Simran  with id  6294b1b4cbf7904107b09aba
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Sai  with id  6294b1b4cbf7904107b09abb
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Suman  with id  6294b1b4cbf7904107b09abc
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Vimal  with id  6294b1b4cbf7904107b09abd
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Hash  with id  6294b1b4cbf7904107b09abe
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Bash  with id  6294b1b4cbf7904107b09abf
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Connecting to api gateway to update latlong for taxi  Biyan  with id  6294b1b4cbf7904107b09ac0
+{'statusCode': 200, 'body': '"Coordinates for Taxi updated !"'}
+
+Sleeping for 60 secs
+
+
