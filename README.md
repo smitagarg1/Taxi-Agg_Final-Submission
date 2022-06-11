@@ -1,3 +1,16 @@
+Please refre files :
+1.Taxi Agg_SURESH NATARAJAN_Final Submission\TestingSteps_result\Testing_Steps_Screenshots
+	- for step by step testing
+	
+2.Taxi Agg_SURESH NATARAJAN_Final Submission\GL_Account_aws_services_setup  (GL account servies details) 
+3.Taxi Agg_SURESH NATARAJAN_Final Submission\AWS_Resources_Screenshot		 (GL account servies screesnhsot)
+4.Taxi Agg_SURESH NATARAJAN_Final Submission\GLTaxiAgg-BookingandTrackingSystem  (presentation slides)
+5.Taxi Agg_SURESH NATARAJAN_Final Submission\Architectural_flow
+
+
+taxi-aggregator-angular-ui  => UI code
+cloud-capstone   => backend code
+
 # cloud-capstone
 
 
@@ -40,42 +53,58 @@ APIGatewayUrls.py  : Contains urls/endpoints for API Gateway
 ####### AWS Lambda files  #############################
 Inside ..src/lambda  folder the code is maintained for tracking purpose 
 
-customer_details_lambda.py
-customer_registration_lambda.py
-latlong_update_lambda.py
-taxi_details_lambda.py
-taxi_registration_lambda.py
+1.	clear_data_lambda.py
+2.	get_trip_details.py
+3.	customer_details_lambda.py
+4.	taxi_registration_lambda.py
+5.	taxi_acceptservice_lambda.py
+6.	taxi_acceptDB_lambda.py
+7.	booking_response_service.py
+8.	taxi_bookingDB_lambda.py
+9.	taxi_bookingService_lambda.py
+10.	latlong_update_lambda.py
+11.	customer_registration_lambda.py
+12.	trip_details_lambda.py
+13.	booking_details_lambda.py
+14.	taxi_details_lambda.py
+
 
 
 Inside ../deployment/lambda_modules/ 
 
 the deployment package is created for all lambdas along with modules like 'pymongo' which are not supported in aws lambda and have to import specifically from outside 
+The package can be directly uploade to lambda code 
 
 
 ####### API GATEWAY endpoints which can be accessed :#############################
 
 
-https://3598y3s21l.execute-api.us-east-1.amazonaws.com/api/customer 
-GET :  Fetch registerd customers
-POST : Register customer 
+https://3598y3s21l.execute-api.us-east-1.amazonaws.com/api/cleardata
+GET
 
 https://3598y3s21l.execute-api.us-east-1.amazonaws.com/api/taxi
-GET :  Fetch registerd taxis
-POST : Register Taxis 
+GET
+POST
 
-https://3598y3s21l.execute-api.us-east-1.amazonaws.com/api/booktaxi?name=Mohan
-GET :Booking APi with sample params
-	This api takes cutomer name as input and fetch the closest taxi based on his location .
+https://3598y3s21l.execute-api.us-east-1.amazonaws.com/api/customer
+GET
+POST
 
-Please use following customer names for testing as exception for non-registered user is not handled as part of intermediate deliverables :
--Mohan
--Isaac
--Amir
--Ashok
--Leonard
+https://3598y3s21l.execute-api.us-east-1.amazonaws.com/api/latlongupdater
+POST
 
-
-https://3598y3s21l.execute-api.us-east-1.amazonaws.com/api/cleardata
-GET : Clear all data from taxis and customers collection 
+https://3598y3s21l.execute-api.us-east-1.amazonaws.com/api/booktaxi?userid=62a0b257e6a7360da3fc44e2&type=ALL
+GET with query params
 
 
+
+https://3598y3s21l.execute-api.us-east-1.amazonaws.com/api/bookingresponse?bookingid=62a0b9e5d8de0010df60905b&taxiid=62a0b25a9e531b402a65119e&accept=Y
+GET with query params
+
+https://3598y3s21l.execute-api.us-east-1.amazonaws.com/api/bookingdetails
+GET
+
+
+https://3598y3s21l.execute-api.us-east-1.amazonaws.com/api/trip
+GET
+POST
