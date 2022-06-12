@@ -1,0 +1,264 @@
+AWSTemplateFormatVersion: '2010-09-09'
+
+Description: AWS API Gateway with a Lambda Integration
+
+Resources:
+
+  ApiGatewayRestApi:
+    Type: AWS::ApiGateway::RestApi
+    Properties:
+      ApiKeySourceType: HEADER
+      Description: An API Gateway with a Lambda Integration
+      EndpointConfiguration:
+        Types:
+          - EDGE
+      Name: lambda-api-br15
+
+  ApiGatewayTaxiResource:
+    Type: AWS::ApiGateway::Resource
+    Properties:
+      ParentId: !GetAtt ApiGatewayRestApi.RootResourceId
+      PathPart: 'taxis'
+      RestApiId: !Ref ApiGatewayRestApi
+
+  ApiGatewayUsersResource:
+    Type: AWS::ApiGateway::Resource
+    Properties:
+      ParentId: !GetAtt ApiGatewayRestApi.RootResourceId
+      PathPart: 'users'
+      RestApiId: !Ref ApiGatewayRestApi
+
+  ApiGatewayBookingResource:
+    Type: AWS::ApiGateway::Resource
+    Properties:
+      ParentId: !GetAtt ApiGatewayRestApi.RootResourceId
+      PathPart: 'booking'
+      RestApiId: !Ref ApiGatewayRestApi
+
+  ApiGatewayTaxiPOSTMethod:
+    Type: AWS::ApiGateway::Method
+    Properties:
+      ApiKeyRequired: false
+      AuthorizationType: NONE
+      HttpMethod: POST
+      Integration:
+        ConnectionType: INTERNET
+        Credentials: !GetAtt ApiGatewayIamRole.Arn
+        IntegrationHttpMethod: POST
+        PassthroughBehavior: WHEN_NO_MATCH
+        TimeoutInMillis: 29000
+        Type: AWS_PROXY
+        Uri: !Sub 'arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${LambdaTaxiFunction.Arn}/invocations'
+      OperationName: 'CreateTaxis'
+      ResourceId: !Ref ApiGatewayTaxiResource
+      RestApiId: !Ref ApiGatewayRestApi
+
+
+  ApiGatewayTaxiGETMethod:
+    Type: AWS::ApiGateway::Method
+    Properties:
+      ApiKeyRequired: false
+      AuthorizationType: NONE
+      HttpMethod: GET
+      Integration:
+        ConnectionType: INTERNET
+        Credentials: !GetAtt ApiGatewayIamRole.Arn
+        IntegrationHttpMethod: POST
+        PassthroughBehavior: WHEN_NO_MATCH
+        TimeoutInMillis: 29000
+        Type: AWS_PROXY
+        Uri: !Sub 'arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${LambdaTaxiFunction.Arn}/invocations'
+      OperationName: 'GetTaxis'
+      ResourceId: !Ref ApiGatewayTaxiResource
+      RestApiId: !Ref ApiGatewayRestApi
+
+  ApiGatewayUsersGETMethod:
+    Type: AWS::ApiGateway::Method
+    Properties:
+      ApiKeyRequired: false
+      AuthorizationType: NONE
+      HttpMethod: GET
+      Integration:
+        ConnectionType: INTERNET
+        Credentials: !GetAtt ApiGatewayIamRole.Arn
+        IntegrationHttpMethod: POST
+        PassthroughBehavior: WHEN_NO_MATCH
+        TimeoutInMillis: 29000
+        Type: AWS_PROXY
+        Uri: !Sub 'arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${LambdaUsersFunction.Arn}/invocations'
+      OperationName: 'GetUsers'
+      ResourceId: !Ref ApiGatewayUsersResource
+      RestApiId: !Ref ApiGatewayRestApi
+
+
+  ApiGatewayUsersPOSTMethod:
+    Type: AWS::ApiGateway::Method
+    Properties:
+      ApiKeyRequired: false
+      AuthorizationType: NONE
+      HttpMethod: POST
+      Integration:
+        ConnectionType: INTERNET
+        Credentials: !GetAtt ApiGatewayIamRole.Arn
+        IntegrationHttpMethod: POST
+        PassthroughBehavior: WHEN_NO_MATCH
+        TimeoutInMillis: 29000
+        Type: AWS_PROXY
+        Uri: !Sub 'arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${LambdaUsersFunction.Arn}/invocations'
+      OperationName: 'CreateUsers'
+      ResourceId: !Ref ApiGatewayUsersResource
+      RestApiId: !Ref ApiGatewayRestApi
+
+  ApiGatewayBookingPOSTMethod:
+    Type: AWS::ApiGateway::Method
+    Properties:
+      ApiKeyRequired: false
+      AuthorizationType: NONE
+      HttpMethod: POST
+      Integration:
+        ConnectionType: INTERNET
+        Credentials: !GetAtt ApiGatewayIamRole.Arn
+        IntegrationHttpMethod: POST
+        PassthroughBehavior: WHEN_NO_MATCH
+        TimeoutInMillis: 29000
+        Type: AWS_PROXY
+        Uri: !Sub 'arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${LambdaBookingFunction.Arn}/invocations'
+      OperationName: 'BookTaxis'
+      ResourceId: !Ref ApiGatewayBookingResource
+      RestApiId: !Ref ApiGatewayRestApi
+
+  ApiGatewayModel:
+    Type: AWS::ApiGateway::Model
+    Properties:
+      ContentType: 'application/json'
+      RestApiId: !Ref ApiGatewayRestApi
+      Schema: {}
+
+  ApiGatewayStage:
+    Type: AWS::ApiGateway::Stage
+    Properties:
+      DeploymentId: !Ref ApiGatewayDeployment
+      Description: Lambda API Stage v0
+      RestApiId: !Ref ApiGatewayRestApi
+      StageName: 'v0'
+
+  ApiGatewayDeployment:
+    Type: AWS::ApiGateway::Deployment
+    DependsOn: ApiGatewayBookingPOSTMethod
+    Properties:
+      Description: Lambda API Deployment
+      RestApiId: !Ref ApiGatewayRestApi
+
+  ApiGatewayIamRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Sid: ''
+            Effect: 'Allow'
+            Principal:
+              Service:
+                - 'apigateway.amazonaws.com'
+            Action:
+              - 'sts:AssumeRole'
+      Path: '/'
+      Policies:
+        - PolicyName: LambdaAccess
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: 'Allow'
+                Action: 'lambda:*'
+                Resource: !GetAtt LambdaTaxiFunction.Arn
+              - Effect: 'Allow'
+                Action: 'lambda:*'
+                Resource: !GetAtt LambdaUsersFunction.Arn
+              - Effect: 'Allow'
+                Action: 'lambda:*'
+                Resource: !GetAtt LambdaBookingFunction.Arn
+
+
+  LambdaTaxiFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      Code:
+          S3Bucket: lambdadeploys3
+          S3Key: lambda_function.zip
+      Description: AWS Lambda function
+      FunctionName: 'lambda-function-br15-1'
+      Handler: index.handler
+      MemorySize: 256
+      Role: !GetAtt LambdaTaxiIamRole.Arn
+      Runtime: python3.9
+      Timeout: 60
+
+  LambdaUsersFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      Code:
+          S3Bucket: lambdadeploys3
+          S3Key: lambda_function.zip
+      Description: AWS Lambda function
+      FunctionName: 'lambda-function-br15-2'
+      Handler: index.handler
+      MemorySize: 256
+      Role: !GetAtt LambdaUsersIamRole.Arn
+      Runtime: python3.9
+      Timeout: 60
+
+  LambdaBookingFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      Code:
+          S3Bucket: lambdadeploys3
+          S3Key: lambda_function.zip
+      Description: AWS Lambda function
+      FunctionName: 'lambda-function-br15-3'
+      Handler: index.handler
+      MemorySize: 256
+      Role: !GetAtt LambdaBookingIamRole.Arn
+      Runtime: python3.9
+      Timeout: 60
+
+  LambdaTaxiIamRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: 'Allow'
+            Principal:
+              Service:
+                - 'lambda.amazonaws.com'
+            Action:
+              - 'sts:AssumeRole'
+      Path: '/'
+
+  LambdaUsersIamRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: 'Allow'
+            Principal:
+              Service:
+                - 'lambda.amazonaws.com'
+            Action:
+              - 'sts:AssumeRole'
+      Path: '/'
+
+  LambdaBookingIamRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: 'Allow'
+            Principal:
+              Service:
+                - 'lambda.amazonaws.com'
+            Action:
+              - 'sts:AssumeRole'
+      Path: '/'

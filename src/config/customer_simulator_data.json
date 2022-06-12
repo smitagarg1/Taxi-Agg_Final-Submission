@@ -1,0 +1,44 @@
+{
+    "customer_list": [
+                {
+                    "name": "Mohan",
+                    "email":"smita.garg01@gmail.com",
+                    "location": {
+                        "type": "Point",
+                        "coordinates": [12.9099 , 77.7664]
+                    }
+                },
+                {
+                    "name": "Isaac",
+                    "email":"smita.garg01@gmail.com",
+                    "location": {
+                        "type": "Point",
+                        "coordinates": [13.0413 , 77.6003]
+                    }
+                },
+                {
+                    "name": "Amir",
+                    "email":"smita.garg01@gmail.com",
+                    "location": {
+                        "type": "Point",
+                        "coordinates": [12.959 , 77.7652]
+                    }
+                },
+                {
+                    "name": "Ashok",
+                    "email":"smita.garg01@gmail.com",
+                    "location": {
+                        "type": "Point",
+                        "coordinates": [13.0244 , 77.7367]
+                    }
+                },
+                {
+                    "name": "Leonard",
+                    "email":"smita.garg01@gmail.com",
+                    "location": {
+                        "type": "Point",
+                        "coordinates": [13.0697 , 77.7098]
+                    }
+                }
+            ]
+}

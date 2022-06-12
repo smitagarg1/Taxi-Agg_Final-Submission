@@ -1,0 +1,23 @@
+To include the libraries needed for any lambda you are writing 
+
+1. cd cloud-capstone/deployment
+2. pip install <module name> -t lambda_function/
+  example : pip install pymongo -t lambda_function/
+  
+The above folder lambda_function should be zipped and uploaded to S3 bucket and used in cloud formation template
+
+3. aws cloudformation create-stack --stack-name gltest-stack2 --template-body file://APIGateway_LambdaProxy.yml --capabilities CAPABILITY_NAMED_IAM
+
+
+
+
+modules installed
+-pymongo
+-requests
+
+
+
+cd ../deployment
+
+create s3 bucket and replace it in below template
+aws cloudformation create-stack --stack-name gltest-stack111 --template-body file://APIGateway_LambdaProxy.yml --capabilities CAPABILITY_NAMED_IAM

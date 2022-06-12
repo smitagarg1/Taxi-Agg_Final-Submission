@@ -1,0 +1,493 @@
+{
+    "taxi_list": [
+            {
+                "name": "Toofan",
+                "type": "Luxury",
+                "hired": "Y",
+				"email":"balajir712@gmail.com",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [12.9262 , 77.52]
+                }
+            },
+            {
+                "name": "Vimaan",
+                "type": "Basic",
+                "hired": "N",
+				"email":"yvmeenakshi@gmail.com",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [13.0564 , 77.768]
+                }
+            },
+            {
+                "name": "Pavan",
+                "type": "Deluxe",
+                "hired": "N",
+				"email":"smita.garg01@gmail.com",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [12.9312 , 77.7604]
+                } },
+      {
+                "name": "Jeevan",
+                "type": "Deluxe",
+                "hired": "Y",
+				"email":"smita.garg01@gmail.com",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [12.8545 , 77.5951]
+                } },
+                {
+                "name": "Uber",
+                "type": "Deluxe",
+                "hired": "N",
+				"email":"smita.garg01@gmail.com",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [12.8479 , 77.6094]
+                }},
+                  {
+                "name": "Ola",
+                "type": "Deluxe",
+                "hired": "N",
+				"email":"smita.garg01@gmail.com",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [12.9747 , 77.6446]
+                }},
+                    {
+                "name": "MeruCab",
+                "type": "Deluxe",
+                "hired": "N",
+				"email":"smita.garg01@gmail.com",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [13.0238 , 77.5091]
+                }},
+                      {
+                "name": "Pavan",
+                "type": "Deluxe",
+                "hired": "Y",
+				"email":"smita.garg01@gmail.com",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [12.9115 , 77.7686]
+                }},
+                        {
+                "name": "Toofan",
+                "type": "Deluxe",
+                "hired": "N",
+				"email":"smita.garg01@gmail.com",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [12.8373 , 77.6797]
+                }
+            },
+       {
+                "name": "Vimaan",
+                "type": "Deluxe",
+                "hired": "N",
+				"email":"smita.garg01@gmail.com",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [12.9556 , 77.4926]
+                }
+            },
+       {
+                "name": "Pavan",
+                "type": "Deluxe",
+                "hired": "Y",
+				"email":"smita.garg01@gmail.com",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [12.9171 , 77.5427]
+                }
+            },
+       {
+                "name": "Toofan",
+                "type": "Deluxe",
+                "hired": "N",
+				"email":"smita.garg01@gmail.com",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [12.8963 , 77.7326]
+                }
+            },
+       {
+                "name": "Vimaan",
+                "type": "Deluxe",
+                "hired": "N",
+				"email":"smita.garg01@gmail.com",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [12.9305 , 77.6556]
+                }
+            },
+       {
+                "name": "Pavan",
+                "type": "Luxury",
+                "hired": "Y",
+				"email":"smita.garg01@gmail.com",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [12.92535, 77.70559]
+                }
+            },
+            {
+                "name": "Chirag",
+                "type": "Basic",
+                "hired": "Y",
+				"email":"smita.garg01@gmail.com",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [12.87743, 77.59633]
+                }
+            },
+            {
+                "name": "Kiran",
+                "type": "Deluxe",
+                "hired": "N",
+				"email":"smita.garg01@gmail.com",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [12.89542, 77.73154]
+                }
+            },
+            {
+                "name": "Suman",
+                "type": "Utility",
+                "hired": "N",
+				"email":"smita.garg01@gmail.com",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [12.85392, 77.71584]
+                }
+            },
+            {
+                "name": "Aahan",
+                "type": "Basic",
+                "hired": "N",
+				"email":"smita.garg01@gmail.com",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [12.78772, 77.58764]
+                }
+            },
+            {
+                "name": "Dan",
+                "type": "Deluxe",
+                "hired": "N",
+				"email":"smita.garg01@gmail.com",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [12.87352, 77.62124]
+                }
+            },
+            {
+                "name": "Tran",
+                "type": "Luxury",
+                "hired": "N",
+				"email":"smita.garg01@gmail.com",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [13.03512, 77.68794]
+                }
+            },
+            {
+                "name": "Sean",
+                "type": "Utility",
+                "hired": "N",
+				"email":"smita.garg01@gmail.com",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [12.82212, 77.49974]
+                }
+            },
+            {
+                "name": "Dean",
+                "type": "Deluxe",
+                "hired": "N",
+				"email":"smita.garg01@gmail.com",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [13.01542, 77.73374]
+                }
+            },
+            {
+                "name": "Tapan",
+                "type": "Luxury",
+                "hired": "N",
+				"email":"smita.garg01@gmail.com",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [13.06652, 77.56394]
+                }
+            },
+            {
+                "name": "Leapun",
+                "type": "Utility",
+                "hired": "N",
+				"email":"smita.garg01@gmail.com",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [12.98272, 77.62924]
+                }
+            },
+            {
+                "name": "Turan",
+                "type": "Basic",
+                "hired": "N",
+				"email":"smita.garg01@gmail.com",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [13.02962, 77.54824]
+                }
+            },
+
+      {
+                "name": "Riyan",
+                "type": "Luxury",
+                "hired": "N",
+				"email":"smita.garg01@gmail.com",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [12.807,77.617]
+                }
+            },
+            {
+                "name": "MeruLight",
+                "type": "Basic",
+                "hired": "N",
+				"email":"smita.garg01@gmail.com",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [13.0497,77.7]
+                }
+            },
+            {
+                "name": "Bright",
+                "type": "Deluxe",
+                "hired": "N",
+				"email":"smita.garg01@gmail.com",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [12.9641,77.6976]
+                } },
+      {
+                "name": "John",
+                "type": "Deluxe",
+                "hired": "Y",
+				"email":"smita.garg01@gmail.com",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [12.9182,77.5102]
+                } },
+                {
+                "name": "Sean",
+                "type": "Deluxe",
+                "hired": "N",
+				"email":"smita.garg01@gmail.com",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [12.9332,77.4786]
+                }},
+                  {
+                "name": "Ola",
+                "type": "Deluxe",
+                "hired": "N",
+				"email":"smita.garg01@gmail.com",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [12.953,77.5445]
+                }},
+                    {
+                "name": "Blue",
+                "type": "Deluxe",
+                "hired": "N",
+				"email":"smita.garg01@gmail.com",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [12.9341,77.6455]
+                }},
+                      {
+                "name": "Vivan",
+                "type": "Deluxe",
+                "hired": "Y",
+				"email":"smita.garg01@gmail.com",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [13.0148,77.4875]
+                }},
+                        {
+                "name": "Nayan",
+                "type": "Deluxe",
+                "hired": "N",
+				"email":"smita.garg01@gmail.com",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [13.0485,77.4885]
+                }
+            },
+       {
+                "name": "Shivam",
+                "type": "Deluxe",
+                "hired": "N",
+				"email":"smita.garg01@gmail.com",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [12.8361,77.6399]
+                }
+            },
+       {
+                "name": "Bill",
+                "type": "Deluxe",
+                "hired": "Y",
+				"email":"smita.garg01@gmail.com",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [12.9075,77.6446]
+                }
+            },
+       {
+                "name": "Simone",
+                "type": "Deluxe",
+                "hired": "N",
+				"email":"smita.garg01@gmail.com",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [13.0383,77.6428]
+                }
+            },
+      {
+    "name": "Chinna",
+    "type": "Deluxe",
+    "hired": "Y",
+	"email":"smita.garg01@gmail.com",
+    "location": {
+        "type": "Point",
+        "coordinates": [12.82785, 77.62155]
+                }
+},
+{
+    "name": "Vinay",
+    "type": "Basic",
+    "hired": "Y",
+	"email":"smita.garg01@gmail.com",
+    "location": {
+        "type": "Point",
+        "coordinates": [12.79185, 77.56855]
+                }
+},
+{
+    "name": "Santa",
+    "type": "Luxury",
+    "hired": "Y",
+	"email":"smita.garg01@gmail.com",
+    "location": {
+        "type": "Point",
+        "coordinates": [13.01545, 77.69995]
+                }
+},
+{
+    "name": "Dey",
+    "type": "Basic",
+    "hired": "Y",
+	"email":"smita.garg01@gmail.com",
+    "location": {
+        "type": "Point",
+        "coordinates": [13.04025, 77.73075]
+                }
+},
+{
+    "name": "Vijay",
+    "type": "Deluxe",
+    "hired": "Y",
+	"email":"smita.garg01@gmail.com",
+    "location": {
+        "type": "Point",
+        "coordinates": [12.87075, 77.76385]
+                }
+},
+{
+    "name": "Walt",
+    "type": "Luxury",
+    "hired": "Y",
+	"email":"smita.garg01@gmail.com",
+    "location": {
+        "type": "Point",
+        "coordinates": [12.79335, 77.50525]
+                }
+},
+{
+    "name": "Simran",
+    "type": "Basic",
+    "hired": "N",
+	"email":"smita.garg01@gmail.com",
+    "location": {
+        "type": "Point",
+        "coordinates": [12.84985, 77.59325]
+                }
+},
+{
+    "name": "Sai",
+    "type": "Luxury",
+    "hired": "Y",
+	"email":"smita.garg01@gmail.com",
+    "location": {
+        "type": "Point",
+        "coordinates": [13.02074, 77.47775]
+                }
+},
+{
+    "name": "Suman",
+    "type": "Deluxe",
+    "hired": "N",
+	"email":"smita.garg01@gmail.com",
+    "location": {
+        "type": "Point",
+        "coordinates": [12.94754, 77.63575]
+                }
+},
+{
+    "name": "Vimal",
+    "type": "Basic",
+    "hired": "Y",
+	"email":"smita.garg01@gmail.com",
+    "location": {
+        "type": "Point",
+        "coordinates": [12.89694, 77.75915]
+                }
+},
+{
+    "name": "Hash",
+    "type": "Deluxe",
+    "hired": "N",
+	"email":"smita.garg01@gmail.com",
+    "location": {
+        "type": "Point",
+        "coordinates": [13.00834, 77.67515]
+                }
+},
+{
+    "name": "Bash",
+    "type": "Luxury",
+    "hired": "N",
+	"email":"smita.garg01@gmail.com",
+    "location": {
+        "type": "Point",
+        "coordinates": [12.80444, 77.69115]
+                }
+},
+      {
+    "name": "Biyan",
+    "type": "Luxury",
+    "hired": "N",
+	"email":"smita.garg01@gmail.com",
+    "location": {
+        "type": "Point",
+        "coordinates": [12.80441, 77.69115]
+                }
+}
+        ]
+}
